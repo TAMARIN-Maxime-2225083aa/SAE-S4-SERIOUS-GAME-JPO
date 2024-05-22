@@ -10180,7 +10180,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4286153273
-  m_fontColor: {r: 0.60784316, g: 0.85882354, b: 0.3882353, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -21995,6 +21995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  sprintSpeed: 10
   footstepAudioSource: {fileID: 1765501170}
   footstepSounds:
   - {fileID: 8300000, guid: 3261a31bee6c75b4786de509728c0f66, type: 3}
