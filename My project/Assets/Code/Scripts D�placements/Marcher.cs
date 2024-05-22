@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float sprintSpeed = 10f;
     public AudioSource footstepAudioSource; 
     public AudioClip[] footstepSounds; 
     private Rigidbody2D rb;
@@ -50,7 +51,10 @@ public class PlayerMovement : MonoBehaviour
         if (canMove)
         {
             // Déplacement du personnage
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
+
+            // Move the character
+            rb.MovePosition(rb.position + movement * currentSpeed * Time.fixedDeltaTime);
         }
     }
 
