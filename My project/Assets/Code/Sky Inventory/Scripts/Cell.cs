@@ -68,6 +68,13 @@ public class Cell : MonoBehaviour
             bgImage.color = elementColor;
             elementText.text = elementName;
             amountText.text = elementCount.ToString();
+
+			// change size elementText
+			RectTransform rectTransform = elementText.GetComponent<RectTransform>();
+			rectTransform.sizeDelta = new Vector2(83, 83); 
+			rectTransform.anchorMin = new Vector2(0.5f, 0.5f); 
+			rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+			rectTransform.pivot = new Vector2(0.5f, 0.5f); 
         }
     }
 
