@@ -77,6 +77,12 @@ public class DialogManager : MonoBehaviour
             return;
         }
 
+        if (isTyping)
+        {
+            StopCoroutine(typingCoroutine);
+            isTyping = false;
+        }
+
         string sentence = sentences.Dequeue();
         if (SceneManager.GetActiveScene().name == requiredSceneForImage &&
             nameText.text == "Mysterieux Guide" &&

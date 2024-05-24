@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ElementalInventory : MonoBehaviour
 {
@@ -87,28 +88,37 @@ public class ElementalInventory : MonoBehaviour
 	}
 
 
-	public void moveItemLink(Transform moveFrom, Transform moveTo)
-	{
-		if (moveFrom != null && moveTo != null)
-		{
-			Cell moveFromCell = moveFrom.parent.GetComponent<Cell>();
-			moveTo.GetComponent<Cell>().elementTransform = moveFromCell.elementTransform;
-			moveFromCell.elementTransform = null;
+    public void moveItemLink(Transform moveFrom, Transform moveTo)
+    {
+        if (moveFrom != null && moveTo != null)
+        {
+            Debug.Log("Moving item from " + moveFrom.name + " to " + moveTo.name);
 
-			// Mise à jour de la cellule de destination avec les informations de l'élément
-			setItemLink(moveFromCell.elementName, moveFromCell.elementCount, moveFromCell.elementColor, moveFromCell.elementDescription, moveTo);
+            Cell moveFromCell = moveFrom.parent.GetComponent<Cell>();
+            moveTo.GetComponent<Cell>().elementTransform = moveFromCell.elementTransform;
+            moveFromCell.elementTransform = null;
 
-			// Réinitialisation de la cellule d'origine
-			moveFromCell.ClearElement(); // Utilisez la méthode ClearElement pour réinitialiser la cellule
+            // Mise à jour de la cellule de destination avec les informations de l'élément
+            setItemLink(moveFromCell.elementName, moveFromCell.elementCount, moveFromCell.elementColor, moveFromCell.elementDescription, moveTo);
 
-			moveFrom.parent = moveTo;
-			moveFrom.localPosition = new Vector3();
-		}
-	}
+            // Réinitialisation de la cellule d'origine
+            moveFromCell.ClearElement(); // Utilisez la méthode ClearElement pour réinitialiser la cellule
+
+            // Update the parent and position
+            moveFrom.SetParent(moveTo, false);
+            moveFrom.localPosition = Vector3.zero;
+
+            // Log the new positions
+            Debug.Log("New parent: " + moveFrom.parent.name + ", Local position: " + moveFrom.localPosition);
+
+            // Force a layout update if necessary
+            LayoutRebuilder.ForceRebuildLayoutImmediate(moveFrom.GetComponentInParent<RectTransform>());
+        }
+    }
 
 
 
-	public void moveItemLinkFirst(Transform t)
+    public void moveItemLinkFirst(Transform t)
 	{
 		choosenItem = t;
 	}
