@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2595,12 +2594,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &545426360
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5438,8 +5437,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mme.Makssoud
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7402e9f6af74f3f499dd96d108129046, type: 2}
-  m_sharedMaterial: {fileID: -6109000611441954184, guid: 7402e9f6af74f3f499dd96d108129046,
+  m_fontAsset: {fileID: 11400000, guid: 1c61372f7dbd704498606fb9b6886b05, type: 2}
+  m_sharedMaterial: {fileID: 8944508491359092239, guid: 1c61372f7dbd704498606fb9b6886b05,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5464,8 +5463,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6091,8 +6090,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Texte Reponse Gauche
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7402e9f6af74f3f499dd96d108129046, type: 2}
-  m_sharedMaterial: {fileID: -6109000611441954184, guid: 7402e9f6af74f3f499dd96d108129046,
+  m_fontAsset: {fileID: 11400000, guid: 1c61372f7dbd704498606fb9b6886b05, type: 2}
+  m_sharedMaterial: {fileID: 8944508491359092239, guid: 1c61372f7dbd704498606fb9b6886b05,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6117,8 +6116,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6227,8 +6226,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ici la question
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7402e9f6af74f3f499dd96d108129046, type: 2}
-  m_sharedMaterial: {fileID: -6109000611441954184, guid: 7402e9f6af74f3f499dd96d108129046,
+  m_fontAsset: {fileID: 11400000, guid: 1c61372f7dbd704498606fb9b6886b05, type: 2}
+  m_sharedMaterial: {fileID: 8944508491359092239, guid: 1c61372f7dbd704498606fb9b6886b05,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6253,8 +6252,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14355,8 +14354,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Texte Reponse Droite
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7402e9f6af74f3f499dd96d108129046, type: 2}
-  m_sharedMaterial: {fileID: -6109000611441954184, guid: 7402e9f6af74f3f499dd96d108129046,
+  m_fontAsset: {fileID: 11400000, guid: 1c61372f7dbd704498606fb9b6886b05, type: 2}
+  m_sharedMaterial: {fileID: 8944508491359092239, guid: 1c61372f7dbd704498606fb9b6886b05,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14381,8 +14380,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
