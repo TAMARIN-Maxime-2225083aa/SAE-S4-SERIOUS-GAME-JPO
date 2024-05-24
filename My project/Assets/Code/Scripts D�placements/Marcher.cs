@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
 
         // Pour empêcher le mouvement diagonal
-        if (horizontal != 0) vertical = 0;
+       // if (horizontal != 0) vertical = 0;
 
         // Mise à jour du vecteur de mouvement
         movement = new Vector2(horizontal, vertical);
