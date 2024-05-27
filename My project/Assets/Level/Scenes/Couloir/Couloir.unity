@@ -49064,7 +49064,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15632594, y: 0.039602585}
+  m_Offset: {x: 0.004184455, y: 0.07113492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -49075,7 +49075,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7243633, y: 0.45756686}
+  m_Size: {x: 0.3004727, y: 0.2948936}
   m_EdgeRadius: 0
 --- !u!61 &968617923
 BoxCollider2D:
@@ -49137,11 +49137,7 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Il faut que je r\xE9vise le partiel. Ce n'est qu'un QCM mais il est n\xE9cessaire. "
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -51738,7 +51734,7 @@ GameObject:
   - component: {fileID: 1207629715}
   - component: {fileID: 1207629714}
   m_Layer: 0
-  m_Name: etudiant_3 (1)
+  m_Name: etudiant_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51864,11 +51860,7 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "L'IUT est grand, cela fait du bien d'\xEAtre pos\xE9 dans la cours. "
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -72749,7 +72741,7 @@ Transform:
   m_GameObject: {fileID: 1643647089}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.7, y: 1.77, z: -0.01593509}
+  m_LocalPosition: {x: 29.6, y: 1.77, z: -0.01593509}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72787,7 +72779,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15632594, y: 0.039602585}
+  m_Offset: {x: 0.004184455, y: 0.07113492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -72798,7 +72790,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7243633, y: 0.45756686}
+  m_Size: {x: 0.3004727, y: 0.2948936}
   m_EdgeRadius: 0
 --- !u!61 &1643647092
 BoxCollider2D:
@@ -72860,11 +72852,8 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - 'Le cours de droit est un peu long mais maintenant je sais ce que je peux faire
+      ! '
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0

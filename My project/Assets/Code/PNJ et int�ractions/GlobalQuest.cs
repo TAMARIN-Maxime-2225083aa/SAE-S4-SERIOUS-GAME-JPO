@@ -45,12 +45,14 @@ public class GlobalQuest : MonoBehaviour
             case 2: // Apr�s avoir battu Mr.Morancey
                 if (currentScene.name == "Couloir")
                 {
-                    targetobject = GameObject.Find("Porte_salle1" + QuestStep.ToString());
+                    targetobject = GameObject.Find("Porte_salle2");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
+                    //Debug.LogError(("Porte_salle" + QuestStep.ToString()));
                 }
                 else if (currentScene.name == "Salle " + (QuestStep - 1).ToString())
                 {
-                    targetobject = GameObject.Find("Porte_Salle" + (QuestStep - 1).ToString());
+                    targetobject = GameObject.Find("Porte_salle2");
+                    
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + QuestStep.ToString())
@@ -63,12 +65,12 @@ public class GlobalQuest : MonoBehaviour
             case 3: // Apr�s avoir battu Mr.Casali
                 if (currentScene.name == "Couloir")
                 {
-                    targetobject = GameObject.Find("Porte_salle" + QuestStep.ToString());
+                    targetobject = GameObject.Find("Porte_salle3");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + (QuestStep - 1).ToString())
                 {
-                    targetobject = GameObject.Find("Porte_Salle" + (QuestStep - 1).ToString());
+                    targetobject = GameObject.Find("Porte_Salle3");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + QuestStep.ToString())
@@ -80,12 +82,12 @@ public class GlobalQuest : MonoBehaviour
             case 4:
                 if (currentScene.name == "Couloir")
                 {
-                    targetobject = GameObject.Find("Porte_salle" + QuestStep.ToString());
+                    targetobject = GameObject.Find("Porte_salle4");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + (QuestStep - 1).ToString())
                 {
-                    targetobject = GameObject.Find("Porte_Salle" + (QuestStep - 1).ToString());
+                    targetobject = GameObject.Find("Porte_Salle4");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + QuestStep.ToString())
@@ -99,12 +101,12 @@ public class GlobalQuest : MonoBehaviour
             case 5:
                 if (currentScene.name == "Couloir")
                 {
-                    targetobject = GameObject.Find("Porte_salle" + QuestStep.ToString());
+                    targetobject = GameObject.Find("Porte_salle5");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + (QuestStep - 1).ToString())
                 {
-                    targetobject = GameObject.Find("Porte_Salle" + (QuestStep - 1).ToString());
+                    targetobject = GameObject.Find("Porte_Salle5");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + QuestStep.ToString())
@@ -116,12 +118,12 @@ public class GlobalQuest : MonoBehaviour
             case 6:
                 if (currentScene.name == "Couloir")
                 {
-                    targetobject = GameObject.Find("Porte_salle" + QuestStep.ToString());
+                    targetobject = GameObject.Find("Porte_salle6");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + (QuestStep - 1).ToString())
                 {
-                    targetobject = GameObject.Find("Porte_Salle" + (QuestStep - 1).ToString());
+                    targetobject = GameObject.Find("Porte_Salle6");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + QuestStep.ToString())
@@ -133,12 +135,12 @@ public class GlobalQuest : MonoBehaviour
             case 7:
                 if (currentScene.name == "Couloir")
                 {
-                    targetobject = GameObject.Find("Porte_salle" + QuestStep.ToString());
+                    targetobject = GameObject.Find("Porte_salle7");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + (QuestStep - 1).ToString())
                 {
-                    targetobject = GameObject.Find("Porte_Salle" + (QuestStep - 1).ToString());
+                    targetobject = GameObject.Find("Porte_Salle7");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 else if (currentScene.name == "Salle " + QuestStep.ToString())
