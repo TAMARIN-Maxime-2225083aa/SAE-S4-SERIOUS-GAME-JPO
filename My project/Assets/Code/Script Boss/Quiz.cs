@@ -8,6 +8,7 @@ using Mono.Data.Sqlite;
 using UnityEngine.UI;
 using MagicPigGames;
 using System.IO;
+using System.Reflection;
 
 /// <summary>
 /// Gère le fonctionnement du quiz et l'interaction avec le boss dans le jeu.
@@ -33,6 +34,8 @@ public class Quiz : MonoBehaviour
     public string selectedProfessor; // Nom du professeur sélectionné
     public Image fadeImage; // Image utilisée pour le fondu au noir
     public GameObject sceneParent; // Référence à l'objet parent de la scène
+    public GameObject winImage;
+    public GameObject loseImage;
 
     /// <summary>
     /// Structure pour représenter une question du quiz.
@@ -74,6 +77,16 @@ public class Quiz : MonoBehaviour
         txtQuestion = GameObject.Find("txtQuestion").GetComponent<TextMeshProUGUI>();
         btnReponseG = GameObject.Find("ReponseG").GetComponent<Button>();
         btnReponseD = GameObject.Find("ReponseD").GetComponent<Button>();
+        winImage = GameObject.Find("winImage");
+        loseImage = GameObject.Find("loseImage");
+
+        if (winImage == null)
+            Debug.LogError("winImage is not assigned.");
+        if (loseImage == null)
+            Debug.LogError("loseImage is not assigned.");
+
+        winImage.SetActive(false);
+        loseImage.SetActive(false);
 
         // Vérification si les composants sont attachés au script
         if (txtQuestion == null || btnReponseG == null || btnReponseD == null)
@@ -233,8 +246,13 @@ public class Quiz : MonoBehaviour
         Debug.Log("Boss Health: " + healthPercentage * 100 + "%");
     }
 
-    // Méthode appelée pour vérifier la réponse donnée par le joueur
     public void CheckAnswer(string selectedAnswer)
+    {
+        StartCoroutine(CheckAnswerCoroutine(selectedAnswer));
+    }
+
+    // Méthode appelée pour vérifier la réponse donnée par le joueur
+    public IEnumerator CheckAnswerCoroutine(string selectedAnswer)
     {
         if (selectedAnswer == Reponse)
         {
@@ -248,7 +266,8 @@ public class Quiz : MonoBehaviour
             {
                 // Incrémentation de l'étape de quête globale et chargement de la scène de victoire ou des crédits
                 GlobalQuest.QuestStep += 1;
-
+                yield return StartCoroutine(ShowWinImageRoutine());
+                
                 if (SceneManager.GetActiveScene().name == "Boss Makssoud")
                 {
                     SceneManager.LoadScene("Credits");
@@ -322,6 +341,7 @@ public class Quiz : MonoBehaviour
         // Vérification si le joueur a épuisé toutes ses vies
         if (playerLives <= 0)
         {
+            yield return StartCoroutine(ShowLoseImageRoutine());
             // Activation du fondu au noir et chargement de la scène de défaite
             fadeImage.gameObject.SetActive(true);
             StartCoroutine(FadeToBlackAndLoadScene());
@@ -395,5 +415,23 @@ public class Quiz : MonoBehaviour
 
         // Chargement de la scène de défaite
         SceneManager.LoadScene(loseSceneName);
+    }
+
+    IEnumerator ShowWinImageRoutine()
+    {
+        Debug.Log("Showing win image");
+        winImage.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        winImage.SetActive(false);
+        Debug.Log("Hid win image");
+    }
+
+    IEnumerator ShowLoseImageRoutine()
+    {
+        Debug.Log("Showing lose image");
+        loseImage.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        loseImage.SetActive(false);
+        Debug.Log("Hid lose image");
     }
 }
