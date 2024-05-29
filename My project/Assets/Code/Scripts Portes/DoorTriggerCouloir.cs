@@ -56,6 +56,7 @@ public class DoorTriggerCouloir : MonoBehaviour
         else
         {
             Debug.LogError(currScene.name);
+            spawnPoint = "SpawnBase";
         }
 
         PlayerPrefs.SetString("PointDeSpawn", spawnPoint);

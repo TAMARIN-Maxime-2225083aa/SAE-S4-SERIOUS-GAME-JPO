@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
-public class DoorTriggerSalle1 : MonoBehaviour
+public class DoorTriggerSalleTutoriel : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
 
@@ -10,24 +10,23 @@ public class DoorTriggerSalle1 : MonoBehaviour
     {
         Debug.Log("OnTriggerEnter2D called");
 
-        if (other.CompareTag("Player") && ElementalInventory.Instance.contains("Cle", 1))
+        if (other.CompareTag("Player") && ElementalInventory.Instance.contains("Cle Tutoriel", 1))
         {
             string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, "Video", "porte_anim.mp4");
-            Debug.Log("videoPath: "+videoPath);
             videoPlayer.url = videoPath;
 
             videoPlayer.Play();
-            videoPlayer.loopPointReached += LoadSalle1Scene;
+            videoPlayer.loopPointReached += LoadSalleTutorielScene;
         }
-        else if (other.CompareTag("Player") && !ElementalInventory.Instance.contains("Cle", 1))
+        else if (other.CompareTag("Player") && !ElementalInventory.Instance.contains("Cle Tutoriel", 1))
         {
             Debug.Log("Vous n'avez pas la clé nécessaire.");
         }
     }
 
-    void LoadSalle1Scene(VideoPlayer vp)
+    void LoadSalleTutorielScene(VideoPlayer vp)
     {
 
-        SceneManager.LoadScene("Couloir");
+        SceneManager.LoadScene("Salle Tutoriel");
     }
 }

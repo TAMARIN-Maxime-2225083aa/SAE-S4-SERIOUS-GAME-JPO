@@ -126,7 +126,9 @@ public class DialogManager : MonoBehaviour
         Animator.SetBool("isOpen", false);
         if (SceneManager.GetActiveScene().name == requiredSceneForImage)
         {
-            dialogueImage.gameObject.SetActive(false);
+            if (dialogueImage != null) {
+                dialogueImage.gameObject.SetActive(false);
+            }
         }// Cacher l'image à la fin du dialogue
 
         if (npcGuideManager != null)
