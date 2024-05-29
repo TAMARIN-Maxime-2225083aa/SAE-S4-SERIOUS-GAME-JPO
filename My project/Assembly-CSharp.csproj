@@ -65,6 +65,7 @@
     <Compile Include="Assets\Code\Script Boss\TypeWriter.cs" />
     <Compile Include="Assets\Code\Sky Inventory\Scripts\VisualMover.cs" />
     <Compile Include="Assets\Code\PNJ et int�ractions\CleScript.cs" />
+    <Compile Include="Assets\Code\Scripts Portes\DoorTriggerSalleTutoriel.cs" />
     <Compile Include="Assets\Code\Script Boss\Scripts bar de vie\VerticalProgressBar.cs" />
     <Compile Include="Assets\Art\Effects\ImageEffects\Scripts\Blur.cs" />
     <Compile Include="Assets\Code\Script Boss\Scripts bar de vie\ScrollingUVs.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\Code\Script Boss\Scripts bar de vie\HorizontalProgressBar.cs" />
     <Compile Include="Assets\Code\PNJ et int�ractions\Dialog.cs" />
     <Compile Include="Assets\Code\Sky Inventory\Scripts\MovingEvent.cs" />
+    <Compile Include="Assets\Code\Scripts Portes\DoorTriggerCouloirTutoriel.cs" />
     <Compile Include="Assets\Code\ATH et MENU\MenuPrincipal.cs" />
     <Compile Include="Assets\Code\Script Boss\Scripts bar de vie\ProgressBarInspectorTest.cs" />
     <Compile Include="Assets\Code\ATH et MENU\CinematicBars.cs" />
