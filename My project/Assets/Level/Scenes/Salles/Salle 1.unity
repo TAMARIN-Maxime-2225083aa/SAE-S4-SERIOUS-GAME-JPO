@@ -3077,7 +3077,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15632594, y: 0.039602585}
+  m_Offset: {x: 0, y: 0.039602585}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3122,7 +3122,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0041844547, y: 0.07113492}
+  m_Offset: {x: 0.0041844547, y: -0.06}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3152,7 +3152,7 @@ MonoBehaviour:
     sentences:
     - "Salut! Tu dois \xEAtre nouveau. "
     - Avant de commencer les cours, il faut que tu parles avec nos professeurs!
-  interactMessage: {fileID: 0}
+  interactMessage: {fileID: 2018228535}
   isInRange: 0
   isBoss: 0
   isDoor: 0
@@ -12399,14 +12399,11 @@ MonoBehaviour:
     - 'C''est pas un input c''est une variable !!
 
 '
-  interactMessage: {fileID: 0}
-  isInRange: 0
+  interactMessage: {fileID: 2018228535}
+  isInRange: 1
   isBoss: 0
   isDoor: 0
-  requiredItems:
-  - 
-  - 
-  - 
+  requiredItems: []
 --- !u!212 &1437787411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12467,7 +12464,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437787406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 06507a031f6310d47b4545a9b16dd777, type: 2}
   m_CullingMode: 0
@@ -18462,6 +18459,8 @@ GameObject:
   - component: {fileID: 1549335522}
   - component: {fileID: 1549335521}
   - component: {fileID: 1549335520}
+  - component: {fileID: 1549335523}
+  - component: {fileID: 1549335524}
   m_Layer: 0
   m_Name: etudiant_2
   m_TagString: Untagged
@@ -18527,7 +18526,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.29418907}
+  m_Size: {x: 0.32, y: 0.5}
   m_EdgeRadius: 0
 --- !u!212 &1549335521
 SpriteRenderer:
@@ -18589,7 +18588,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549335518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d14570af738c5eb47a817dd537a1c5c3, type: 2}
   m_CullingMode: 0
@@ -18602,6 +18601,72 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1549335523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549335518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da792c87f7648e144917460ff0ade326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    name: Carlos
+    sentences:
+    - Salut
+  interactMessage: {fileID: 2018228535}
+  isInRange: 0
+  isBoss: 0
+  isDoor: 0
+  requiredItems: []
+--- !u!61 &1549335524
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549335518}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1550185902
 GameObject:
   m_ObjectHideFlags: 0
