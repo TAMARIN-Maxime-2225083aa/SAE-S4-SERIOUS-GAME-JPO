@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCGuideManager : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class NPCGuideManager : MonoBehaviour
         playerMovement = FindObjectOfType<PlayerMovement>();
 
         // V�rifie si c'est la premi�re fois que la cin�matique est lanc�e dans cette session de jeu
-        if (cinematicPlayCount == 0)
+        if (cinematicPlayCount == 0 || SceneManager.GetActiveScene().name == "Salle Tutoriel")
         {
 
             if (playerMovement != null)

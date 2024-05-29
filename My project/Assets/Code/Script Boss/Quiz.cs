@@ -272,6 +272,11 @@ public class Quiz : MonoBehaviour
                 {
                     SceneManager.LoadScene("Credits");
                 }
+                else if (SceneManager.GetActiveScene().name == "Boss Anonyme")
+                {
+                    ElementalInventory.Instance.clear();
+                    SceneManager.LoadScene("MenuPrincipal");
+                }
                 else
                 {
                     SceneManager.LoadScene(winSceneName);
@@ -422,7 +427,7 @@ public class Quiz : MonoBehaviour
         Debug.Log("Showing win image");
         winImage.SetActive(true);
         yield return new WaitForSeconds(1.5f);
-        winImage.SetActive(false);
+        //winImage.SetActive(false);
         Debug.Log("Hid win image");
     }
 
@@ -431,7 +436,7 @@ public class Quiz : MonoBehaviour
         Debug.Log("Showing lose image");
         loseImage.SetActive(true);
         yield return new WaitForSeconds(1.5f);
-        loseImage.SetActive(false);
+        //loseImage.SetActive(false);
         Debug.Log("Hid lose image");
     }
 }

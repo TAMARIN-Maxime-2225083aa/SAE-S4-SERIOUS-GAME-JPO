@@ -16,6 +16,7 @@ public class CleScript : MonoBehaviour, IInteractable
         if (CleManager.Instance.WasItemPickedUp(itemName))
         {
             Destroy(gameObject);
+            
         }
     }
 
@@ -59,12 +60,12 @@ public class CleScript : MonoBehaviour, IInteractable
                 itemPickedUp = true;
                 CleManager.Instance.MarkItemAsPickedUp(gameObject.name);
 
-
+                Debug.Log("objet supprimé :"+gameObject.name);
                 Destroy(gameObject);
 
                 if (myRenderer != null)
                 {
-                    myRenderer.enabled = false;
+                   myRenderer.enabled = false;
                 }
                 else
                 {
