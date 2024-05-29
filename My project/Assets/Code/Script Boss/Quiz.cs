@@ -272,6 +272,11 @@ public class Quiz : MonoBehaviour
                 {
                     SceneManager.LoadScene("Credits");
                 }
+                else if (SceneManager.GetActiveScene().name == "Boss Anonyme")
+                {
+                    ElementalInventory.Instance.clear();
+                    SceneManager.LoadScene("MenuPrincipal");
+                }
                 else
                 {
                     SceneManager.LoadScene(winSceneName);

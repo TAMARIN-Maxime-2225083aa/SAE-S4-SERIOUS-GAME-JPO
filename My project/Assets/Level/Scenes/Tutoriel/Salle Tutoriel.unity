@@ -8840,7 +8840,7 @@ PrefabInstance:
     - target: {fileID: 1424941095979090963, guid: ac9938edf08164c4d8b1b7ef15810da8,
         type: 3}
       propertyPath: elementDescription
-      value: "\"En faisant ECHAP vous affich\xE9 le menu pour quitter\"\""
+      value: '"En faisant ECHAP vous affichez le menu pour quitter"'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
