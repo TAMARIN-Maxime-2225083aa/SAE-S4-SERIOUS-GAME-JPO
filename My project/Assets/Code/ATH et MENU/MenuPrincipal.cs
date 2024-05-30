@@ -9,6 +9,12 @@ public class MainMenuScript : MonoBehaviour
         PlayerPrefs.SetString("PointDeSpawn", null);
     }
 
+    public void TutorialGame()
+    {
+        SceneManager.LoadScene("Couloir Tutoriel");
+        PlayerPrefs.SetString("PointDeSpawn", null);
+    }
+
     public void QuitGame()
     {
 #if UNITY_EDITOR
