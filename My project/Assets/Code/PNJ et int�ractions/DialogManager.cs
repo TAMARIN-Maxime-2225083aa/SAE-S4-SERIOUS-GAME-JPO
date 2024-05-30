@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class DialogManager : MonoBehaviour
 {
     public Animator Animator;
+    public GameObject DialogUI;
     private Coroutine typingCoroutine;
     private Queue<string> sentences;
     public TMP_Text nameText;
@@ -73,6 +74,7 @@ public class DialogManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            StopCoroutine(typingCoroutine);
             EndDialog();
             return;
         }
