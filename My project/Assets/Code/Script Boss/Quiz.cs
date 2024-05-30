@@ -97,6 +97,7 @@ public class Quiz : MonoBehaviour
         // Construction de la chaîne de connexion à la base de données
         string databasePath = Path.Combine(Application.streamingAssetsPath, "DB_Unity.db");
         conn = "URI=file:" + databasePath;
+        Debug.Log(conn);
 
         // Chargement des questions depuis la base de données
         LoadQuestionsFromDatabase();
@@ -264,23 +265,6 @@ public class Quiz : MonoBehaviour
             // Vérification si la santé du boss est épuisée
             if (bossHealth <= 0)
             {
-                // Incrémentation de l'étape de quête globale et chargement de la scène de victoire ou des crédits
-                GlobalQuest.QuestStep += 1;
-                yield return StartCoroutine(ShowWinImageRoutine());
-                
-                if (SceneManager.GetActiveScene().name == "Boss Makssoud")
-                {
-                    SceneManager.LoadScene("Credits");
-                }
-                else if (SceneManager.GetActiveScene().name == "Boss Anonyme")
-                {
-                    ElementalInventory.Instance.clear();
-                    SceneManager.LoadScene("MenuPrincipal");
-                }
-                else
-                {
-                    SceneManager.LoadScene(winSceneName);
-                }
 
                 // Ajout d'une clé à l'inventaire du joueur avec une couleur aléatoire
                 Color randomColor = new Color(Random.value, Random.value, Random.value);
@@ -311,6 +295,24 @@ public class Quiz : MonoBehaviour
                 else
                 {
                     ElementalInventory.Instance.addItem("wsh", 1, randomColor, "Il faut quitter le jeu par pitié");
+                }
+
+                // Incrémentation de l'étape de quête globale et chargement de la scène de victoire ou des crédits
+                GlobalQuest.QuestStep += 1;
+                yield return StartCoroutine(ShowWinImageRoutine());
+                
+                if (SceneManager.GetActiveScene().name == "Boss Makssoud")
+                {
+                    SceneManager.LoadScene("Credits");
+                }
+                else if (SceneManager.GetActiveScene().name == "Boss Anonyme")
+                {
+                    CleManager.Instance.RemovePickupItems();
+                    SceneManager.LoadScene("MenuPrincipal");
+                }
+                else
+                {
+                    SceneManager.LoadScene(winSceneName);
                 }
             }
         }

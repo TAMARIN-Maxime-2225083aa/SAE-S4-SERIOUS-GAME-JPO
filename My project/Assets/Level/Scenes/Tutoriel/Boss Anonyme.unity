@@ -8297,17 +8297,17 @@ MonoBehaviour:
   bossHealth: 30
   bossMaxHealth: 30
   playerLives: 3
-  winSceneName: Salle 1
+  winSceneName: Salle Tutoriel
   heartImages:
   - {fileID: 920626656}
   - {fileID: 1958497933}
   - {fileID: 814185651}
   fullHeartSprite: {fileID: 21300000, guid: 15cc575b0d9a36846838578bfb080819, type: 3}
   emptyHeartSprite: {fileID: 21300000, guid: 58572f73d180ec64a82724c7b2626738, type: 3}
-  loseSceneName: Couloir
+  loseSceneName: Couloir Tutoriel
   Reponse: 
   typeWriter: {fileID: 961102978}
-  selectedProfessor: Morancey
+  selectedProfessor: Anonyme
   fadeImage: {fileID: 384359096}
   sceneParent: {fileID: 1951801816}
   winImage: {fileID: 0}

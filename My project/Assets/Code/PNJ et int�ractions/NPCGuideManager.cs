@@ -28,7 +28,11 @@ public class NPCGuideManager : MonoBehaviour
             }
 
             StartCinematic();
-            cinematicPlayCount++; 
+
+            // On ne compte pas les interventions du guide dans le tutoriel qui sont multiples
+            if (!SceneManager.GetActiveScene().name.Contains("Tutoriel")) {
+                cinematicPlayCount++; 
+            }
         }
         else
         {

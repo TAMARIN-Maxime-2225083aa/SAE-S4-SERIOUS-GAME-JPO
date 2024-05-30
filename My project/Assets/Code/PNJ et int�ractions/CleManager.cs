@@ -28,4 +28,9 @@ public class CleManager : MonoBehaviour
     {
         return pickedUpItems.Contains(itemName);
     }
+
+    public void RemovePickupItems()
+    {
+        pickedUpItems.Clear();
+    }
 }
