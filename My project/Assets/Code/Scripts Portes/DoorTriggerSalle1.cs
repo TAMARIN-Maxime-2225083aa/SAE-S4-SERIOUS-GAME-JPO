@@ -28,6 +28,6 @@ public class DoorTriggerSalle1 : MonoBehaviour
     void LoadSalle1Scene(VideoPlayer vp)
     {
 
-        SceneManager.LoadScene("Couloir");
+        SceneManager.LoadScene("Salle 1");
     }
 }
