@@ -3150,8 +3150,8 @@ MonoBehaviour:
   dialog:
     name: Mike
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. "
-    - Avant de commencer les cours, il faut que tu parles avec nos professeurs!
+    - "Notre formation est \xE0 la fois pratique et th\xE9orique, ce qui nous  permet
+      de nous adapter rapidement aux \xE9volutions technologiques.\r"
   interactMessage: {fileID: 2018228535}
   isInRange: 0
   isBoss: 0
@@ -7009,6 +7009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 2069534962}
+  DialogUI: {fileID: 0}
   nameText: {fileID: 1598275824}
   dialogText: {fileID: 1258171759}
   playerMovement: {fileID: 309853053}
@@ -12395,10 +12396,8 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - ... c'est la qu'il me dit
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Les \xE9tudiants sont form\xE9s \xE0 l'analyse de donn\xE9es et \xE0 l'intelligence
+      artificielle, ouvrant la voie \xE0 des carri\xE8res dans des secteurs de pointe.\r"
   interactMessage: {fileID: 2018228535}
   isInRange: 1
   isBoss: 0
@@ -18614,9 +18613,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Carlos
+    name: Maxime
     sentences:
-    - Salut
+    - "Le BUT Informatique met l'accent sur la collaboration et la communication
+      professionnelle, des atouts majeurs dans ce milieu.\r"
   interactMessage: {fileID: 2018228535}
   isInRange: 0
   isBoss: 0
