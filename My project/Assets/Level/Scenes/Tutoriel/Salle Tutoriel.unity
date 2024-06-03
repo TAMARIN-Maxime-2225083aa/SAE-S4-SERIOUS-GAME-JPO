@@ -6446,11 +6446,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 2069534962}
+  DialogUI: {fileID: 0}
   nameText: {fileID: 1598275824}
   dialogText: {fileID: 1258171759}
   playerMovement: {fileID: 309853053}
-  dialogueImage: {fileID: 497638039}
-  imageDisplaySentenceIndex: 3
   requiredSceneForImage: Salle Tutoriel
 --- !u!4 &846229011
 Transform:
@@ -7326,7 +7325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 2
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
