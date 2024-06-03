@@ -5953,10 +5953,9 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - ... c'est la qu'il me dit
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Avec le BUT informatique, les \xE9tudiants acqui\xE8rent des comp\xE9tences
+      en analyse de donn\xE9es, les pr\xE9parant \xE0 des carri\xE8res dans la data
+      science.\r"
   interactMessage: {fileID: 1994163569}
   isInRange: 1
   isBoss: 0
@@ -6816,10 +6815,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Mike
+    name: Clement
     sentences:
-    - Test
-    - Avant de commencer les cours, il faut que tu parles avec nos professeurs!
+    - "Vous souhaitez cr\xE9er des applications mobiles ? Le BUT informatique vous
+      apprend les bases de la programmation."
   interactMessage: {fileID: 1994163569}
   isInRange: 1
   isBoss: 0
@@ -8242,11 +8241,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 779713905}
+  DialogUI: {fileID: 0}
   nameText: {fileID: 552454686}
   dialogText: {fileID: 652775080}
   playerMovement: {fileID: 309853053}
-  dialogueImage: {fileID: 0}
-  imageDisplaySentenceIndex: 3
   requiredSceneForImage: Couloir
 --- !u!4 &909506766
 Transform:
@@ -13413,9 +13411,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Carlos
+    name: Leo
     sentences:
-    - Salut test
+    - "Avec le BUT Informatique, vous allez apprendre \xE0 concevoir et \xE0 g\xE9rer
+      des infrastructures r\xE9seaux robustes et s\xE9curis\xE9es."
   interactMessage: {fileID: 1994163569}
   isInRange: 0
   isBoss: 0
