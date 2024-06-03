@@ -7013,8 +7013,6 @@ MonoBehaviour:
   nameText: {fileID: 1598275824}
   dialogText: {fileID: 1258171759}
   playerMovement: {fileID: 309853053}
-  dialogueImage: {fileID: 0}
-  imageDisplaySentenceIndex: 3
   requiredSceneForImage: Couloir
 --- !u!4 &846229011
 Transform:
@@ -12399,7 +12397,7 @@ MonoBehaviour:
     - "Les \xE9tudiants sont form\xE9s \xE0 l'analyse de donn\xE9es et \xE0 l'intelligence
       artificielle, ouvrant la voie \xE0 des carri\xE8res dans des secteurs de pointe.\r"
   interactMessage: {fileID: 2018228535}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems: []

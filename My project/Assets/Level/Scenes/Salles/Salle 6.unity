@@ -3659,11 +3659,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 1814208177}
+  DialogUI: {fileID: 0}
   nameText: {fileID: 38299556}
   dialogText: {fileID: 1940829513}
   playerMovement: {fileID: 708235245}
-  dialogueImage: {fileID: 0}
-  imageDisplaySentenceIndex: 3
   requiredSceneForImage: Couloir
 --- !u!4 &293070677
 Transform:
@@ -17635,7 +17634,7 @@ MonoBehaviour:
 
 '
   interactMessage: {fileID: 1587193969}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems: []

@@ -3234,11 +3234,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 277438496}
+  DialogUI: {fileID: 0}
   nameText: {fileID: 2066889781}
   dialogText: {fileID: 1186461457}
   playerMovement: {fileID: 1765501172}
-  dialogueImage: {fileID: 0}
-  imageDisplaySentenceIndex: 3
   requiredSceneForImage: Couloir
 --- !u!4 &352398538
 Transform:
@@ -5759,7 +5758,7 @@ MonoBehaviour:
 
 '
   interactMessage: {fileID: 1925357390}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems: []
@@ -8991,7 +8990,7 @@ MonoBehaviour:
     - Test
     - Avant de commencer les cours, il faut que tu parles avec nos professeurs!
   interactMessage: {fileID: 0}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems:

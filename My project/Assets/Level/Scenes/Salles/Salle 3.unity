@@ -5957,7 +5957,7 @@ MonoBehaviour:
       en analyse de donn\xE9es, les pr\xE9parant \xE0 des carri\xE8res dans la data
       science.\r"
   interactMessage: {fileID: 1994163569}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems: []
@@ -6820,7 +6820,7 @@ MonoBehaviour:
     - "Vous souhaitez cr\xE9er des applications mobiles ? Le BUT informatique vous
       apprend les bases de la programmation."
   interactMessage: {fileID: 1994163569}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems:

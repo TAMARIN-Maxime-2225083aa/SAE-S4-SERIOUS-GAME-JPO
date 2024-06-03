@@ -3667,7 +3667,7 @@ MonoBehaviour:
     sentences:
     - Salut test
   interactMessage: {fileID: 917222995}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems: []
@@ -4531,7 +4531,7 @@ MonoBehaviour:
 
 '
   interactMessage: {fileID: 917222995}
-  isInRange: 1
+  isInRange: 0
   isBoss: 0
   isDoor: 0
   requiredItems: []
@@ -7464,11 +7464,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 936688208}
+  DialogUI: {fileID: 0}
   nameText: {fileID: 809532305}
   dialogText: {fileID: 1105776489}
   playerMovement: {fileID: 1632186488}
-  dialogueImage: {fileID: 0}
-  imageDisplaySentenceIndex: 3
   requiredSceneForImage: Couloir
 --- !u!4 &929541380
 Transform:
