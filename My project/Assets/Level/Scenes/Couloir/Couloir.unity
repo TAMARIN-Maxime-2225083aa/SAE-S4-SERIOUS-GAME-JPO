@@ -479,11 +479,8 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "La formation \xE0 l'IUT m'a donn\xE9 des bases solides pour r\xE9ussir en
+      licence professionnelle"
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -533,7 +530,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -347137922, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
+  m_Sprite: {fileID: -589141595, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2531,7 +2528,7 @@ Transform:
   m_GameObject: {fileID: 157331672}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.56, y: 1.71, z: -0.01593509}
+  m_LocalPosition: {x: 49.513, y: 1.531, z: -0.01593509}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2642,11 +2639,8 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "La formation \xE0 l'IUT m'a donn\xE9 des bases solides pour r\xE9ussir en
+      licence professionnelle."
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -2695,7 +2689,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -347137922, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4771,7 +4765,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -796595051, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -46498,7 +46492,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15632594, y: 0.039602585}
+  m_Offset: {x: -0.15632594, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -46543,7 +46537,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0041844547, y: 0.07113492}
+  m_Offset: {x: 0.0041844547, y: -0.05113492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -46571,11 +46565,8 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Les stages sont une partie essentielle de notre formation. Ils permettent
+      aux \xE9tudiants d'appliquer leurs connaissances dans un environnement professionnel"
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -48043,7 +48034,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -347137922, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -48443,7 +48434,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1793892918, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -52963,7 +52954,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15632594, y: 0.039602585}
+  m_Offset: {x: 0, y: 0.039602585}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -52974,7 +52965,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7243633, y: 0.45756686}
+  m_Size: {x: 0.4243633, y: 0.8575669}
   m_EdgeRadius: 0
 --- !u!61 &696466692
 BoxCollider2D:
@@ -53008,7 +52999,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0041844547, y: 0.07113492}
+  m_Offset: {x: 0.0041844547, y: -0.0313492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -53559,11 +53550,9 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Les journ\xE9es portes ouvertes sont parfaites pour d\xE9couvrir notre IUT"
+    - "Nos cours couvrent la programmation, la cybers\xE9curit\xE9, et bien plus
+      encore"
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -56206,7 +56195,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.004184455, y: 0.07113492}
+  m_Offset: {x: 0.004184455, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -56217,7 +56206,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3004727, y: 0.2948936}
+  m_Size: {x: 0.5004727, y: 0.6948936}
   m_EdgeRadius: 0
 --- !u!61 &968617923
 BoxCollider2D:
@@ -56251,7 +56240,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0041844547, y: 0.07113492}
+  m_Offset: {x: 0.0041844547, y: -0.07113492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -58896,7 +58885,7 @@ Transform:
   m_GameObject: {fileID: 1207629712}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.73, y: -2.42, z: -0.01593509}
+  m_LocalPosition: {x: 27.318, y: -2.499, z: -0.01593509}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59056,7 +59045,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -347137922, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -59150,7 +59139,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1793892918, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -71628,7 +71617,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 37
-      m_TileSpriteIndex: 64
+      m_TileSpriteIndex: 66
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -71658,7 +71647,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 41
-      m_TileSpriteIndex: 60
+      m_TileSpriteIndex: 65
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -71668,7 +71657,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 45
-      m_TileSpriteIndex: 59
+      m_TileSpriteIndex: 64
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -71718,7 +71707,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 38
-      m_TileSpriteIndex: 52
+      m_TileSpriteIndex: 60
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -71748,7 +71737,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 55
-      m_TileSpriteIndex: 54
+      m_TileSpriteIndex: 59
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -71938,7 +71927,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 31
-      m_TileSpriteIndex: 45
+      m_TileSpriteIndex: 54
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -71968,7 +71957,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 26
-      m_TileSpriteIndex: 44
+      m_TileSpriteIndex: 52
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -71998,7 +71987,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 35
-      m_TileSpriteIndex: 43
+      m_TileSpriteIndex: 45
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -72128,7 +72117,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 54
-      m_TileSpriteIndex: 41
+      m_TileSpriteIndex: 44
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -72208,7 +72197,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 12
-      m_TileSpriteIndex: 40
+      m_TileSpriteIndex: 43
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -72218,7 +72207,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 13
-      m_TileSpriteIndex: 39
+      m_TileSpriteIndex: 41
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -72238,7 +72227,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 30
-      m_TileSpriteIndex: 37
+      m_TileSpriteIndex: 40
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -72298,7 +72287,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 43
-      m_TileSpriteIndex: 36
+      m_TileSpriteIndex: 39
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -72308,7 +72297,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 42
-      m_TileSpriteIndex: 35
+      m_TileSpriteIndex: 37
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -72318,7 +72307,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 44
-      m_TileSpriteIndex: 33
+      m_TileSpriteIndex: 36
       m_TileMatrixIndex: 0
       m_TileColorIndex: 4
       m_TileObjectToInstantiateIndex: 65535
@@ -75103,32 +75092,32 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -1213054444, guid: 6db10aeaab138a24caa7d424b101c56a, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 15
     m_Data: {fileID: 2010055370, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1213054444, guid: 6db10aeaab138a24caa7d424b101c56a, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 825515001, guid: 6db10aeaab138a24caa7d424b101c56a, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: -1817386520, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1046537245, guid: 6db10aeaab138a24caa7d424b101c56a, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 788507152, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: -1817386520, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -919407666, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
+  - m_RefCount: 3
+    m_Data: {fileID: 1998659385, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1163109857, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1633668034, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: 1998659385, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1883372045, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1400628165, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1506459443, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1674922208, guid: 6db10aeaab138a24caa7d424b101c56a, type: 3}
   - m_RefCount: 1
@@ -75142,11 +75131,11 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -1565586007, guid: 6db10aeaab138a24caa7d424b101c56a, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -390522801, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
+    m_Data: {fileID: 1400628165, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -838806996, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -586137191, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
+    m_Data: {fileID: -1506459443, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -177644981, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
@@ -75156,9 +75145,9 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -516588818, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1023218732, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
+    m_Data: {fileID: -586137191, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1119191864, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
+    m_Data: {fileID: -390522801, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 609397541, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
   - m_RefCount: 2
@@ -75166,11 +75155,11 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: -1914989156, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 1023218732, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1119191864, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 1989143111, guid: 33d7c6826c7ffa346b378e8c11e1d941, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -1211543845, guid: c9282a28db2c72f48b635580cd6c1d1b, type: 3}
   - m_RefCount: 1
@@ -76464,7 +76453,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.004184455, y: 0.07113492}
+  m_Offset: {x: 0.004184455, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -76475,7 +76464,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3004727, y: 0.2948936}
+  m_Size: {x: 0.5004727, y: 0.648936}
   m_EdgeRadius: 0
 --- !u!61 &1643647092
 BoxCollider2D:
@@ -76509,7 +76498,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0041844547, y: 0.07113492}
+  m_Offset: {x: 0.0041844547, y: -0.07113492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -76587,7 +76576,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1965790215, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -78138,11 +78127,11 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Gr\xE2ce \xE0 la sp\xE9cialisation en d\xE9veloppement logiciel, il est possible
+      de cr\xE9er des applications mobiles innovantes et s\xE9curis\xE9es afin d\u2019am\xE9liorer
+      l'exp\xE9rience des joueurs\r\n"
+    - "Notre BUT offre une formation compl\xE8te en d\xE9veloppement web et mobile,
+      nous pr\xE9parant \xE0 cr\xE9er des solutions num\xE9riques modernes"
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -80489,11 +80478,9 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - "Salut! Tu dois \xEAtre nouveau. Avant de commencer les cours, il faut que
-      tu parles avec nos professeurs!"
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "L'IUT informatique pr\xE9pare les \xE9tudiants \xE0 devenir des professionnels
+      polyvalents capables de concevoir, d\xE9velopper et maintenir des syst\xE8mes
+      informatiques"
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
