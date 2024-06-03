@@ -54722,8 +54722,7 @@ MonoBehaviour:
   characterSprite: {fileID: 958499461}
   characterName: Mysterieux Guide
   dialogueLines:
-  - "Bienvenue au d\xE9partement informatique de l'IUT d'Aix-Marseille Universit\xE9
-    !"
+  - "Bienvenue au d\xE9partement informatique de l'IUT d'Aix-Marseille !"
   - "\xC0 l'IUT, nous allions apprentissage th\xE9orique et projets concrets dans
     divers domaines de l'informatique."
   - "D\xE9couvrez dans chaque salle une nouvelle th\xE9matique et un boss que vous
