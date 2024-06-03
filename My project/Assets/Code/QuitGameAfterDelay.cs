@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 #if UNITY_EDITOR
-using UnityEditor; // Nécessaire pour accéder à EditorApplication.ExitPlaymode
+using UnityEditor; // NÃ©cessaire pour accï¿½der ï¿½ EditorApplication.ExitPlaymode
 #endif
 
 public class QuitGameAfterDelay : MonoBehaviour
 {
-    public float delay = 10f; // Délai en secondes avant de quitter le jeu
+    public float delay = 10f; // DÃ©lai en secondes avant de quitter le jeu
 
     void Start()
     {
@@ -17,12 +18,13 @@ public class QuitGameAfterDelay : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-#if UNITY_EDITOR
-        // Quitter le mode Play dans l'éditeur Unity
-        EditorApplication.ExitPlaymode();
-#else
-        // Quitter le jeu lorsqu'il est exécuté en dehors de l'éditeur
-        Application.Quit();
-#endif
+        // Reinitialise l'inventaire et par consÃ©quent le jeu
+        CleManager.Instance.RemovePickupItems();
+
+        // Remet le NPC Ã  true dans le couloir
+        NPCGuideManager.Instance.ToggleCinematicCouloir();
+
+        // Revenir au menu principal
+        SceneManager.LoadScene("MenuPrincipal");
     }
 }

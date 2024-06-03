@@ -12,6 +12,17 @@ public class NPCGuideManager : MonoBehaviour
     public CinematicBars cinematicBars;
     private static bool cinematicCouloir = true;
 
+    // pour reinitialisé en dehors de la class
+    public static NPCGuideManager Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
+
     void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
@@ -29,7 +40,7 @@ public class NPCGuideManager : MonoBehaviour
             StartCinematic();
 
             // Comme cinématique déjà effectué on ne la refait pas
-            cinematicCouloir = false;
+            ToggleCinematicCouloir();
         }
         else
         {
@@ -72,5 +83,10 @@ public class NPCGuideManager : MonoBehaviour
         {
             playerMovement.SetCanMove(true);
         }
+    }
+
+    public void ToggleCinematicCouloir()
+    {
+        cinematicCouloir = !cinematicCouloir;
     }
 }
