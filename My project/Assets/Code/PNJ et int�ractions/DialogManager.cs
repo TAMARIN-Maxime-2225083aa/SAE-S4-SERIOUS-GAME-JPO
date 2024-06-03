@@ -15,8 +15,6 @@ public class DialogManager : MonoBehaviour
     public TMP_Text dialogText;
     private NPCGuideManager npcGuideManager;
     public PlayerMovement playerMovement;
-    public Image dialogueImage;
-    public int imageDisplaySentenceIndex = 3;
     private int currentSentenceIndex = 0;
     public string requiredSceneForImage = "Couloir";
 
@@ -31,10 +29,6 @@ public class DialogManager : MonoBehaviour
         Instance = this;
         sentences = new Queue<string>();
         npcGuideManager = FindObjectOfType<NPCGuideManager>();
-        if (dialogueImage != null)
-        {
-            dialogueImage.gameObject.SetActive(false);
-        }
     }
 
     //commente ma fonction StartDialog
@@ -86,23 +80,6 @@ public class DialogManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        if (SceneManager.GetActiveScene().name == requiredSceneForImage &&
-            nameText.text == "Mysterieux Guide" &&
-            currentSentenceIndex == imageDisplaySentenceIndex)
-        {
-            // S'assurer que l'objet Image n'est pas nul avant de l'activer
-            if (dialogueImage != null)
-            {
-                dialogueImage.gameObject.SetActive(true); // Afficher l'image
-            }
-        }
-        else
-        {
-            if (dialogueImage != null)
-            {
-                dialogueImage.gameObject.SetActive(false); // Cacher l'image
-            }
-        }
         currentSentenceIndex++;
         typingCoroutine = StartCoroutine(TypeSentence(sentence));
     }
@@ -126,12 +103,6 @@ public class DialogManager : MonoBehaviour
     {
         IsDialogueActive = false;
         Animator.SetBool("isOpen", false);
-        if (SceneManager.GetActiveScene().name == requiredSceneForImage)
-        {
-            if (dialogueImage != null) {
-                dialogueImage.gameObject.SetActive(false);
-            }
-        }// Cacher l'image à la fin du dialogue
 
         if (npcGuideManager != null)
         {

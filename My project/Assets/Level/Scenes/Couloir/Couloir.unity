@@ -47655,8 +47655,6 @@ MonoBehaviour:
   nameText: {fileID: 869881832}
   dialogText: {fileID: 429515438}
   playerMovement: {fileID: 26847347}
-  dialogueImage: {fileID: 1603515944}
-  imageDisplaySentenceIndex: 4
   requiredSceneForImage: Couloir
 --- !u!4 &461900127
 Transform:
@@ -53767,7 +53765,6 @@ RectTransform:
   - {fileID: 406278862}
   - {fileID: 1570119690}
   - {fileID: 1374714067}
-  - {fileID: 1603515943}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -54747,18 +54744,17 @@ MonoBehaviour:
   characterSprite: {fileID: 958499461}
   characterName: Mysterieux Guide
   dialogueLines:
-  - "Bienvenue dans les couloirs de la connaissance, ou chaque porte peut ouvrir
-    un univers de possibilit\xE9s"
-  - Ici a l'IUT, nous ne nous contentons pas d'apprendre; nous defions les mysteres
-    de la technologie.
-  - "Chaque salle rec\xE8le de secrets qui attendent d'\xEAtre d\xE9voiles par les
-    esprits curieux"
-  - "Mais d'abord, laissez moi vous pr\xE9senter ce que nous abordons dans la fili\xE8re
-    informatique..."
-  - "Cette image devant vos yeux pr\xE9sente les comp\xE9tences apprises lors d'un
-    cursus de BUT informatique"
-  - Pour le reste des informations, explorez les couloirs de l'IUT...
-  - Tiens, un etudiant semble confus devant vous...
+  - "Bienvenue au d\xE9partement informatique de l'IUT d'Aix-Marseille Universit\xE9
+    !"
+  - "\xC0 l'IUT, nous allions apprentissage th\xE9orique et projets concrets dans
+    divers domaines de l'informatique."
+  - "D\xE9couvrez dans chaque salle une nouvelle th\xE9matique et un boss que vous
+    d\xE9fierez lors d'un quiz. N'oubliez pas de r\xE9colter des indices avant !"
+  - "Pour entrer dans la premi\xE8re salle, trouvez la cl\xE9 qui d\xE9verrouillera
+    la premi\xE8re porte du couloir"
+  - "N'oubliez pas d'interagir avec les PNJ, ils vous fourniront de pr\xE9cieuses
+    informations sur le BUT informatique."
+  - "Il y a 7 boss donc 7 th\xE9matiques. Bonne chance !"
   cinematicBars: {fileID: 461900129}
 --- !u!1 &869881830
 GameObject:
@@ -75924,81 +75920,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601431921}
-  m_CullTransparentMesh: 1
---- !u!1 &1603515942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1603515943}
-  - component: {fileID: 1603515945}
-  - component: {fileID: 1603515944}
-  m_Layer: 5
-  m_Name: Image_Competences
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1603515943
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603515942}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 739470266}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: 97}
-  m_SizeDelta: {x: 1263.09, y: 911.77}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1603515944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603515942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5840acd4297f9f409b5ea7474046ce2, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1603515945
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603515942}
   m_CullTransparentMesh: 1
 --- !u!1 &1614483581
 GameObject:

@@ -10,16 +10,15 @@ public class NPCGuideManager : MonoBehaviour
     public string[] dialogueLines; 
     private PlayerMovement playerMovement; 
     public CinematicBars cinematicBars;
-
-   
-    private static int cinematicPlayCount = 0;
+    private static bool cinematicCouloir = true;
 
     void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
 
-        // V�rifie si c'est la premi�re fois que la cin�matique est lanc�e dans cette session de jeu
-        if (cinematicPlayCount == 0 || SceneManager.GetActiveScene().name == "Salle Tutoriel")
+        Debug.Log("Cinematic couloir : " + cinematicCouloir);
+        // Verifie si c'est la premi�re fois que la cin�matique est lanc�e dans cette session de jeu
+        if (cinematicCouloir || SceneManager.GetActiveScene().name.Contains("Tutoriel"))
         {
 
             if (playerMovement != null)
@@ -29,10 +28,8 @@ public class NPCGuideManager : MonoBehaviour
 
             StartCinematic();
 
-            // On ne compte pas les interventions du guide dans le tutoriel qui sont multiples
-            if (!SceneManager.GetActiveScene().name.Contains("Tutoriel")) {
-                cinematicPlayCount++; 
-            }
+            // Comme cinématique déjà effectué on ne la refait pas
+            cinematicCouloir = false;
         }
         else
         {
