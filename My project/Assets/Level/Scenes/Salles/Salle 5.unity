@@ -2048,9 +2048,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Carlos
+    name: Dorian
     sentences:
-    - Salut test
+    - Be prepared to speak a lot of English
+    - It's difficult but very beneficial for students
   interactMessage: {fileID: 1925357390}
   isInRange: 0
   isBoss: 0
@@ -5751,10 +5752,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Etudiant
+    name: Alex
     sentences:
-    - ... c'est la qu'il me dit
-    - 'C''est pas un input c''est une variable !!
+    - Hi, this is our English teacher
+    - 'To learn better, we should communicate in English during the lesson
 
 '
   interactMessage: {fileID: 1925357390}
@@ -8985,10 +8986,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Mike
+    name: Jules
     sentences:
-    - Test
-    - Avant de commencer les cours, il faut que tu parles avec nos professeurs!
+    - "J'ai du mal \xE0 parler anglais"
+    - "\xC0 cause de cela, je ne comprends souvent pas les manuels de programmation"
+    - Apprends l'anglais, ne sois pas comme moi
   interactMessage: {fileID: 0}
   isInRange: 0
   isBoss: 0

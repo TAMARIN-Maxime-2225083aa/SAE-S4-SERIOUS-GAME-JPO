@@ -7651,9 +7651,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Carlos
+    name: Loris
     sentences:
-    - Salut test
+    - "Dans de nombreux examens, il est permis d'utiliser une feuille sur laquelle
+      tu peux apporter les informations dont tu as besoin, \xE9crites \xE0 la main"
+    - "Je te conseille de pr\xE9parer de telles feuilles pour chaque mati\xE8re,
+      car cela peut \xEAtre utile non seulement pendant l'examen mais aussi pendant
+      les cours"
   interactMessage: {fileID: 1587193969}
   isInRange: 0
   isBoss: 0
@@ -17629,10 +17633,9 @@ MonoBehaviour:
   dialog:
     name: Etudiant
     sentences:
-    - ... c'est la qu'il me dit
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Dans notre universit\xE9, tu apprendras \xE0 utiliser les bases de donn\xE9es"
+    - "Beaucoup d'\xE9l\xE8ves trouvent cela difficile, mais je crois que tu y arriveras
+      !"
   interactMessage: {fileID: 1587193969}
   isInRange: 0
   isBoss: 0

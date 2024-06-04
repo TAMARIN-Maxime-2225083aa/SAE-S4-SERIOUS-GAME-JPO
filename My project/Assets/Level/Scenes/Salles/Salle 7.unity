@@ -573,9 +573,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Carlos
+    name: Carl
     sentences:
-    - Salut test
+    - "Je recommande de travailler sur des projets personnels en plus de tes \xE9tudes"
+    - "Cela t'aidera \xE0 mieux assimiler les informations apprises en classe"
+    - De plus, cela te facilitera la recherche d'alternance ou de stages
   interactMessage: {fileID: 920389187}
   isInRange: 0
   isBoss: 0
@@ -10818,10 +10820,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Mike
+    name: Nicolas
     sentences:
-    - Test
-    - Avant de commencer les cours, il faut que tu parles avec nos professeurs!
+    - "Dans notre universit\xE9, tu travailleras sur de nombreux projets en \xE9quipe"
+    - "\rCela te pr\xE9parera au monde du travail r\xE9el, o\xF9 il est rare de travailler
+      seul sur un projet"
+    - "Sois pr\xEAt \xE0 communiquer, \xE0 d\xE9velopper et \xE0 planifier non seulement
+      ton travail, mais aussi celui de ton \xE9quipe"
   interactMessage: {fileID: 920389187}
   isInRange: 0
   isBoss: 0
@@ -22556,8 +22561,9 @@ MonoBehaviour:
   dialog:
     name: Mike
     sentences:
-    - Test
-    - Avant de commencer les cours, il faut que tu parles avec nos professeurs!
+    - "Si tu as des probl\xE8mes, n'h\xE9site pas \xE0 t'adresser aux enseignants"
+    - Ils peuvent non seulement nous enseigner, mais aussi donner leur avis sur tes
+      projets personnels
   interactMessage: {fileID: 920389187}
   isInRange: 0
   isBoss: 0

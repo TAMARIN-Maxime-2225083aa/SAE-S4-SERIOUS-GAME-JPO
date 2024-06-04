@@ -3663,9 +3663,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Carlos
+    name: Fred
     sentences:
-    - Salut test
+    - Salut, tu es nouveau ?
+    - "Je te conseille de suivre attentivement les cours pour \xE9viter les probl\xE8mes
+      aux examens \xE0 la fin de chaque semestre"
   interactMessage: {fileID: 917222995}
   isInRange: 0
   isBoss: 0
@@ -3757,7 +3759,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -815866613, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
+  m_Sprite: {fileID: 641047198, guid: 3779c3cfd3c1a9e48b414ab1595cc015, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4453,7 +4455,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15632594, y: 0.039602585}
+  m_Offset: {x: 0, y: 0.039602585}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4524,12 +4526,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Etudiant
+    name: Yuki
     sentences:
-    - ... c'est la qu'il me dit
-    - 'C''est pas un input c''est une variable !!
-
-'
+    - "Notre universit\xE9 offre de nombreuses opportunit\xE9s"
+    - Vous pourrez apprendre de nombreux langages de programmation
+    - "Ainsi que de nombreuses informations qui vous aideront \xE0 construire votre
+      carri\xE8re"
   interactMessage: {fileID: 917222995}
   isInRange: 0
   isBoss: 0
