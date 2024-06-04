@@ -350,7 +350,6 @@ public class Quiz : MonoBehaviour
         {
             yield return StartCoroutine(ShowLoseImageRoutine());
             // Activation du fondu au noir et chargement de la scène de défaite
-            fadeImage.gameObject.SetActive(true);
             StartCoroutine(FadeToBlackAndLoadScene());
         }
         else
@@ -400,22 +399,6 @@ public class Quiz : MonoBehaviour
     // Coroutine pour le fondu au noir et le chargement de la scène de défaite
     private IEnumerator FadeToBlackAndLoadScene()
     {
-        Debug.Log("Début de la coroutine de fondu au noir");
-        Debug.Log("Image de fondu activée");
-
-        float fadeDuration = 0.8f;
-        float fadeStep = 0.2f;
-
-        // Progression progressive du fondu au noir
-        for (float i = 0; i <= 1; i += fadeStep)
-        {
-            fadeImage.color = new Color(0, 0, 0, i);
-            Debug.Log("Fondu au noir progressif : Alpha = " + i);
-            yield return new WaitForSeconds(fadeDuration * fadeStep);
-        }
-
-        Debug.Log("Fondu au noir terminé");
-
         // Attente avant de charger la scène de défaite
         yield return new WaitForSeconds(1f);
         Debug.Log("Chargement de la nouvelle scène : " + loseSceneName);
