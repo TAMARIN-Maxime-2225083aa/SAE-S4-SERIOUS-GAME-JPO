@@ -60,6 +60,12 @@ public class CleScript : MonoBehaviour, IInteractable
                 itemPickedUp = true;
                 CleManager.Instance.MarkItemAsPickedUp(gameObject.name);
 
+                // cas particulier pour la quête du tutoriel
+                if (GameObject.Find("Cle Tutoriel") || GameObject.Find("Indice Courir") || GameObject.Find("Indice Graphes"))
+                {
+                    TutorialQuest.QuestStep += 1;
+                }
+
                 Debug.Log("objet supprimé :"+gameObject.name);
                 Destroy(gameObject);
 

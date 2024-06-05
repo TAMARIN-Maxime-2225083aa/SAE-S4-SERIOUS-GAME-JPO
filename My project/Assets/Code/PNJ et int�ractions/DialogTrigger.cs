@@ -83,6 +83,10 @@ public class DialogTrigger : MonoBehaviour
 
             DialogManager.Instance.StartDialog(dialog);
         }
+        if (GameObject.Find("etudiant_Tutoriel") || GameObject.Find("Boss Anonyme"))
+        {
+            TutorialQuest.QuestStep += 1;
+        }
     }
 
     private bool CheckRequiredItems()
