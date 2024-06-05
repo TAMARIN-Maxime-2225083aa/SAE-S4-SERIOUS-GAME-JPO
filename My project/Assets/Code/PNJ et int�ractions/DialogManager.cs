@@ -19,12 +19,16 @@ public class DialogManager : MonoBehaviour
     public string requiredSceneForImage = "Couloir";
     public GameObject Cle;
     public GameObject Carte;
+    public GameObject diapo1;
+    public GameObject diapo2;
+    public GameObject diapo3;
 
     private HashSet<string> playedDialogues = new HashSet<string>(); // Pour suivre les dialogues déjà joués
 
     public static DialogManager Instance;
     public bool IsDialogueActive { get; private set; }
     private bool isTyping = false;
+    private bool presentation = false;
 
     private void Awake()
     {
@@ -33,14 +37,31 @@ public class DialogManager : MonoBehaviour
         npcGuideManager = FindObjectOfType<NPCGuideManager>();
         Cle = GameObject.Find("Cle");
         Carte = GameObject.Find("Carte");
+        diapo1 = GameObject.Find("diapo1");
+        diapo2 = GameObject.Find("diapo2");
+        diapo3 = GameObject.Find("diapo3");
+
         if (Cle != null)
         {
             Cle.SetActive(false); // Disable Cle at the start of the game
         }
         if (Carte != null)
         {
-            Carte.SetActive(false); // Disable Cle at the start of the game
+            Carte.SetActive(false); 
         }
+        if (diapo1 != null)
+        {
+            diapo1.SetActive(false); 
+        }
+        if (diapo2 != null)
+        {
+            diapo2.SetActive(false);
+        }
+        if (diapo3 != null)
+        {
+            diapo3.SetActive(false);
+        }
+
     }
 
     //commente ma fonction StartDialog
@@ -71,6 +92,13 @@ public class DialogManager : MonoBehaviour
             sentences.Enqueue("Vous devez d'abord parler à Secretaire 1 pour obtenir la carte d'etudiant.");
             
         }
+        else if(dialog.name == "Secretaire 1" && !presentation)
+        {
+            sentences.Enqueue("Bonjour, avant d'obtenir votre carte d'étudiant, vous devez en savoir plus sur notre université");
+            sentences.Enqueue("Près du mur, il y a un ordinateur où vous pouvez consulter la présentation de l'université");
+            sentences.Enqueue("Cela vous aidera à mieux comprendre comment se déroule l'enseignement ici");
+            sentences.Enqueue("Après avoir regardé la présentation, je pourrai vous remettre votre carte d'étudiant");
+        }
         else
         {
             foreach (string sentence in dialog.sentences)
@@ -97,7 +125,7 @@ public class DialogManager : MonoBehaviour
             Color randomColor = new Color(Random.value, Random.value, Random.value);
             if (nameText.text == "Secretaire 1")
             {
-                if (Carte != null)
+                if (Carte != null && presentation)
                 {
                     Carte.SetActive(true);
                 }
@@ -109,7 +137,26 @@ public class DialogManager : MonoBehaviour
                     Cle.SetActive(true);
                 }
             }
+            if (nameText.text == "Presentation IUT")
+            {
+                diapo1.SetActive(false);
+                diapo2.SetActive(false);
+                diapo3.SetActive(false);
+                presentation = true;
+            }
             return;
+        }
+        if (nameText.text == "Presentation IUT" && currentSentenceIndex == 0)
+        {
+            diapo1.SetActive(true);
+        }
+        if (nameText.text == "Presentation IUT" && currentSentenceIndex == 3)
+        {
+            diapo2.SetActive(true);
+        }
+        if (nameText.text == "Presentation IUT" && currentSentenceIndex == 7)
+        {
+            diapo3.SetActive(true);
         }
 
         if (isTyping)
