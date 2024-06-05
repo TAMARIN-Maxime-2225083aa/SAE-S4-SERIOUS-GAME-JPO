@@ -17,6 +17,8 @@ public class DialogManager : MonoBehaviour
     public PlayerMovement playerMovement;
     private int currentSentenceIndex = 0;
     public string requiredSceneForImage = "Couloir";
+    public GameObject Cle;
+    public GameObject Carte;
 
     private HashSet<string> playedDialogues = new HashSet<string>(); // Pour suivre les dialogues déjà joués
 
@@ -29,6 +31,16 @@ public class DialogManager : MonoBehaviour
         Instance = this;
         sentences = new Queue<string>();
         npcGuideManager = FindObjectOfType<NPCGuideManager>();
+        Cle = GameObject.Find("Cle");
+        Carte = GameObject.Find("Carte");
+        if (Cle != null)
+        {
+            Cle.SetActive(false); // Disable Cle at the start of the game
+        }
+        if (Carte != null)
+        {
+            Carte.SetActive(false); // Disable Cle at the start of the game
+        }
     }
 
     //commente ma fonction StartDialog
@@ -50,9 +62,21 @@ public class DialogManager : MonoBehaviour
         nameText.text = dialog.name;
         sentences.Clear();
 
-        foreach (string sentence in dialog.sentences)
+        if (dialog.name == "Secretaire 2" && !ElementalInventory.Instance.contains("Carte d'étudiant", 1))
         {
-            sentences.Enqueue(sentence);
+            // Add a specific sentence instructing to speak to "Secretaire 1" first
+            sentences.Enqueue("Bonjour");
+            sentences.Enqueue("Vous êtes venu chercher la clé pour la salle 1 ?");
+            sentences.Enqueue("Il semble que je ne puisse pas vous fournir la clé, car vous n'avez pas de carte d'étudiant");
+            sentences.Enqueue("Vous devez d'abord parler à Secretaire 1 pour obtenir la carte d'etudiant.");
+            
+        }
+        else
+        {
+            foreach (string sentence in dialog.sentences)
+            {
+                sentences.Enqueue(sentence);
+            }
         }
 
         DisplayNextSentence();
@@ -70,6 +94,21 @@ public class DialogManager : MonoBehaviour
         {
             StopCoroutine(typingCoroutine);
             EndDialog();
+            Color randomColor = new Color(Random.value, Random.value, Random.value);
+            if (nameText.text == "Secretaire 1")
+            {
+                if (Carte != null)
+                {
+                    Carte.SetActive(true);
+                }
+            }
+            if (nameText.text == "Secretaire 2" && ElementalInventory.Instance.contains("Carte d'étudiant", 1))
+            {
+                if (Cle != null)
+                {
+                    Cle.SetActive(true);
+                }
+            }
             return;
         }
 
