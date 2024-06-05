@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GlobalQuest : MonoBehaviour
 {
 
-    public static int QuestStep = 1; // Etape actuelle de la qu�te
+    public static int QuestStep = 0; // Etape actuelle de la qu�te
     GameObject targetobject;
     Scene currentScene;
 
@@ -29,6 +29,14 @@ public class GlobalQuest : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         switch (QuestStep)
         {
+            case 0: // récupéré dirige au secrétériat
+                if (currentScene.name == "Couloir")
+                {
+                    targetobject = GameObject.Find("ordinateur");
+                    ArrowOrbit.ChangeTarget(targetobject.transform);
+                }
+                break;
+
             case 1: // Apr�s avoir ramass� la cl�
                 if (currentScene.name == "Couloir")
                 {

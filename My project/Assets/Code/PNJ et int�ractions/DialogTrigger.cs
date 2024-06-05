@@ -83,9 +83,17 @@ public class DialogTrigger : MonoBehaviour
 
             DialogManager.Instance.StartDialog(dialog);
         }
+
+        // gestion quête tutoriel
         if (GameObject.Find("etudiant_Tutoriel") || GameObject.Find("Boss Anonyme"))
         {
             TutorialQuest.QuestStep += 1;
+        }
+
+        // gestion quête principal
+        if (GameObject.Find("ordinateur"))
+        {
+            GlobalQuest.QuestStep += 1;
         }
     }
 
