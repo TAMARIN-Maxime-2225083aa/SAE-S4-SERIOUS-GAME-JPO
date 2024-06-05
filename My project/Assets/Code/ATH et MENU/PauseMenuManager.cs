@@ -9,9 +9,10 @@ public class PauseMenuManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("                             START");
         pauseMenuUI.SetActive(false);
         playerMovement = FindObjectOfType<PlayerMovement>(); // Find the PlayerMovement script in the scene
-
+    
         if (playerMovement == null)
         {
             Debug.LogError("PlayerMovement script not found in the scene.");
@@ -35,6 +36,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void PauseGame()
     {
+        Debug.Log("                             pauseGame");
         pauseMenuUI.SetActive(true);
 
         if (playerMovement != null)
@@ -47,6 +49,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ResumeGame()
     {
+        Debug.Log("                             resumeGame");
         pauseMenuUI.SetActive(false);
 
         if (playerMovement != null)
@@ -59,6 +62,8 @@ public class PauseMenuManager : MonoBehaviour
 
     public void QuitToMainMenu()
     {
+        
+        Debug.Log("                             Quit");
         Time.timeScale = 1f;
         SceneManager.LoadScene("MenuPrincipal");
     }
