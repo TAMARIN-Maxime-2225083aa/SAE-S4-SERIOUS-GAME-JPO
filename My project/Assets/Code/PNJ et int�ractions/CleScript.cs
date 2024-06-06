@@ -13,25 +13,6 @@ public class CleScript : MonoBehaviour, IInteractable
         myRenderer = GetComponent<Renderer>();
         string itemName = gameObject.name;
 
-        // Cas si l'objet est une quête
-        switch (itemName)
-        {
-            case "Cle Tutoriel": // Clé tutoriel
-                if (TutorialQuest.QuestStep == 2)
-                    TutorialQuest.QuestStep += 1;
-                break;
-
-            case "Menu": // indice tutoriel menu
-                if (TutorialQuest.QuestStep == 4)
-                    TutorialQuest.QuestStep += 1;
-                break;
-
-            case "courir": // indice tutoriel courir
-                if (TutorialQuest.QuestStep == 5)
-                    TutorialQuest.QuestStep += 1;
-                break;
-        }
-
         if (CleManager.Instance.WasItemPickedUp(itemName))
         {
             Destroy(gameObject);
@@ -78,6 +59,34 @@ public class CleScript : MonoBehaviour, IInteractable
                 ElementalInventory.Instance.addItem(cell.elementName, cell.elementCount, randomColor, cell.elementDescription);
                 itemPickedUp = true;
                 CleManager.Instance.MarkItemAsPickedUp(gameObject.name);
+
+                // Cas si l'objet est une quête
+                switch (cell.elementName)
+                {
+                    case "Cle Tutoriel": // Clé tutoriel
+                        if (TutorialQuest.QuestStep == 2)
+                            TutorialQuest.QuestStep += 1;
+                        break;
+
+                    case "Menu": // indice tutoriel menu
+                        if (TutorialQuest.QuestStep == 4)
+                            TutorialQuest.QuestStep += 1;
+                        break;
+
+                    case "courir": // indice tutoriel courir
+                        if (TutorialQuest.QuestStep == 5)
+                            TutorialQuest.QuestStep += 1;
+                        break;
+
+                    case "Cle": // clé salle 1
+                        if (GlobalQuest.QuestStep == 4)
+                            Debug.Log("cle prise");
+                        GlobalQuest.QuestStep += 1;
+                        break;
+
+                    default:
+                        break;
+                }
 
                 Debug.Log("objet supprimé :"+gameObject.name);
                 Destroy(gameObject);

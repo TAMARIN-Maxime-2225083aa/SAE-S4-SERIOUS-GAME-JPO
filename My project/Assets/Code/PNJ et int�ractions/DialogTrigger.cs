@@ -106,7 +106,7 @@ public class DialogTrigger : MonoBehaviour
                     GlobalQuest.QuestStep += 1;
                 break;
             
-            case "Carte d'étudiant": // récupère clé étudiante
+            case "Carte d'étudiant": // récupère carte étudiante
                 if (GlobalQuest.QuestStep == 2)
                     GlobalQuest.QuestStep += 1;
                 break;
@@ -116,11 +116,8 @@ public class DialogTrigger : MonoBehaviour
                     GlobalQuest.QuestStep += 1;
                 break;
 
-            case "Cle": // Voir secretaire 2
-                if (GlobalQuest.QuestStep == 4)
-                    GlobalQuest.QuestStep += 1;
+            default:
                 break;
-
 
         }
     }
