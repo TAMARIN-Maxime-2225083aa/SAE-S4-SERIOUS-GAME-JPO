@@ -14148,7 +14148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Etudiant
+    name: etudiant du Tutoriel
     sentences:
     - "Salut ! Chaque boss est dans une salle verrouill\xE9e par une cl\xE9. Pour
       obtenir la cl\xE9, tu dois battre le boss pr\xE9c\xE9dent."
