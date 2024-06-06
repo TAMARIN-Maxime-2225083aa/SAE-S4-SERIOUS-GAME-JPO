@@ -4138,7 +4138,7 @@ MonoBehaviour:
   dialog:
     name: Cle
     sentences:
-    - Vous avez ramasse une cle
+    - Vous avez ramasse une cle qui ouvre la salle 1
     - Vous pouvez appuyer sur TAB pour afficher les objets de votre inventaire
   interactMessage: {fileID: 1374714068}
   isInRange: 0
@@ -5235,11 +5235,11 @@ MonoBehaviour:
     name: Secretaire 1
     sentences:
     - "F\xE9licitations pour votre admission \xE0 notre universit\xE9 !"
-    - "Nous avons pr\xE9par\xE9 votre carte d'\xE9tudiant"
+    - "Nous avons pr\xE9par\xE9 votre carte \xE9tudiante."
     - "Cette carte est non seulement votre document d'identit\xE9, mais vous pouvez
-      \xE9galement l'utiliser pour payer \xE0 la caf\xE9t\xE9ria"
+      \xE9galement l'utiliser pour payer \xE0 la caf\xE9t\xE9ria."
     - "De plus, si vous souhaitez emprunter une cl\xE9 de salle, vous devez la pr\xE9senter
-      \xE0 mon coll\xE8gue"
+      \xE0 mon coll\xE8gue."
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
@@ -55391,8 +55391,8 @@ MonoBehaviour:
     divers domaines de l'informatique."
   - "D\xE9couvrez dans chaque salle une nouvelle th\xE9matique et un boss que vous
     d\xE9fierez lors d'un quiz. N'oubliez pas de r\xE9colter des indices avant !"
-  - "Pour entrer dans la premi\xE8re salle, trouvez la cl\xE9 qui d\xE9verrouillera
-    la premi\xE8re porte du couloir"
+  - "Pour entrer dans la premi\xE8re salle, chercher la cl\xE9 qui d\xE9verrouillera
+    la premi\xE8re porte du couloir au secreteriat"
   - "N'oubliez pas d'interagir avec les PNJ, ils vous fourniront de pr\xE9cieuses
     informations sur le BUT informatique."
   - "Il y a 7 boss donc 7 th\xE9matiques. Bonne chance !"
@@ -57625,14 +57625,17 @@ MonoBehaviour:
     - "L'objectif de cette formation est de former un informaticien g\xE9n\xE9rique
       pr\xEAt \xE0 rentrer dans le monde professionnel"
     - 'Les deux parcours sont les suivant:'
-    - "Le premier, \"R\xE9alisation d'application\" permet de voir comment faire
-      des applications complexe et compl\xE8te"
-    - "Le second permet de voir les pr\xE9misse de la cybers\xE9curit\xE9"
+    - "Le premier, \"R\xE9alisation d'application\", permet de voir comment cr\xE9er
+      des applications complexes et compl\xE8tes."
+    - "Le second, \"D\xE9ploiement d\u2019applications communicantes et s\xE9curis\xE9es\",
+      permet de voir les pr\xE9misses de la cybers\xE9curit\xE9"
     - "Voici les comp\xE9tences au centre de la formation"
-    - "Le parcours \"R\xE9alisation d'application\" permet d'approfondir les comp\xE9tences
-      R\xE9aliser, Optimiser et Collaborer\r\n"
-    - "Le parcours \"D\xE9ploiement d\u2019applications\r\ncommunicantes et s\xE9curis\xE9es\"
-      permet d'approfondir les comp\xE9tences R\xE9aliser, Administrer et Collaborer."
+    - "Chaque parcours approfondit une comp\xE9tence en plus de R\xE9aliser et Collaborer
+      en 3e ann\xE9e."
+    - "Le parcours \"R\xE9alisation d'application\" permet d'approfondir la comp\xE9tence
+      Optimiser."
+    - "Le parcours \"D\xE9ploiement d\u2019applications communicantes et s\xE9curis\xE9es\"
+      permet d'approfondir la comp\xE9tence Administrer."
   interactMessage: {fileID: 1374714068}
   isInRange: 0
   isBoss: 0
