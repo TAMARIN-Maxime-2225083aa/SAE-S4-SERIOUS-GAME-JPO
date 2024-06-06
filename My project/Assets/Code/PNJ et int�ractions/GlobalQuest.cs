@@ -29,15 +29,47 @@ public class GlobalQuest : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         switch (QuestStep)
         {
-            case 0: // récupéré dirige au secrétériat
+            case 0: // voir info sur ordinateur secreteriat
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("ordinateur");
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 break;
+            
+            case 1: // voir secretaire 1
+                if (currentScene.name == "Couloir")
+                {
+                    targetobject = GameObject.Find("secretaire_1");
+                    ArrowOrbit.ChangeTarget(targetobject.transform);
+                }
+                break;
 
-            case 1: // Apr�s avoir ramass� la cl�
+            case 2: // prendre carte étudiante
+                if (currentScene.name == "Couloir")
+                {
+                    targetobject = GameObject.Find("Cible carte etudiante");
+                    ArrowOrbit.ChangeTarget(targetobject.transform);
+                }
+                break;
+
+            case 3: // voir secretaire 2
+                if (currentScene.name == "Couloir")
+                {
+                    targetobject = GameObject.Find("secretaire_2");
+                    ArrowOrbit.ChangeTarget(targetobject.transform);
+                }
+                break;
+
+            case 4: // prendre clé salle 1
+                if (currentScene.name == "Couloir")
+                {
+                    targetobject = GameObject.Find("Cible cle salle 1");
+                    ArrowOrbit.ChangeTarget(targetobject.transform);
+                }
+                break;
+
+            case 5: // Apr�s avoir ramass� la cl�
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("Porte_salle1");
@@ -50,7 +82,7 @@ public class GlobalQuest : MonoBehaviour
                 }
                 break;
 
-            case 2: // Apr�s avoir battu Mr.Morancey
+            case 6: // Apr�s avoir battu Mr.Morancey
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("Porte_salle2");
@@ -70,7 +102,7 @@ public class GlobalQuest : MonoBehaviour
                 }
                 break;
 
-            case 3: // Apr�s avoir battu Mr.Casali
+            case 7: // Apr�s avoir battu Mr.Casali
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("Porte_salle3");
@@ -87,7 +119,7 @@ public class GlobalQuest : MonoBehaviour
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 break;
-            case 4:
+            case 8:
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("Porte_salle4");
@@ -106,7 +138,7 @@ public class GlobalQuest : MonoBehaviour
                 break;
 
 
-            case 5:
+            case 9:
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("Porte_salle5");
@@ -123,7 +155,7 @@ public class GlobalQuest : MonoBehaviour
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 break;
-            case 6:
+            case 10:
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("Porte_salle6");
@@ -140,7 +172,7 @@ public class GlobalQuest : MonoBehaviour
                     ArrowOrbit.ChangeTarget(targetobject.transform);
                 }
                 break;
-            case 7:
+            case 11:
                 if (currentScene.name == "Couloir")
                 {
                     targetobject = GameObject.Find("Porte_salle7");

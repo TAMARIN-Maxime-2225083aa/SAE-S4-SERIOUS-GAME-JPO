@@ -96,10 +96,32 @@ public class DialogTrigger : MonoBehaviour
                     TutorialQuest.QuestStep += 1;
                 break;
             
-            case "ordinateur": // Voir ordinateur 
+            case "Presentation IUT": // Voir ordinateur 
                 if (GlobalQuest.QuestStep == 0)
                     GlobalQuest.QuestStep += 1;
                 break;
+            
+            case "Secretaire 1": // Voir secretaire 1
+                if (GlobalQuest.QuestStep == 1)
+                    GlobalQuest.QuestStep += 1;
+                break;
+            
+            case "Carte d'étudiant": // récupère clé étudiante
+                if (GlobalQuest.QuestStep == 2)
+                    GlobalQuest.QuestStep += 1;
+                break;
+            
+            case "Secretaire 2": // Voir secretaire 2
+                if (GlobalQuest.QuestStep == 3)
+                    GlobalQuest.QuestStep += 1;
+                break;
+
+            case "Cle": // Voir secretaire 2
+                if (GlobalQuest.QuestStep == 4)
+                    GlobalQuest.QuestStep += 1;
+                break;
+
+
         }
     }
 
